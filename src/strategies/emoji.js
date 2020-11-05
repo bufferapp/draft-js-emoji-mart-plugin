@@ -1,6 +1,6 @@
 // @flow
 
-import { ContentBlock } from 'draft-js';
+import { ContentBlock } from '@bufferapp/draft-js';
 import findWithRegex from 'find-with-regex';
 
 import { unicodeEmojiRegexp } from '../constants';

@@ -6,7 +6,7 @@ import React from 'react';
 // Reduce bundle size. Tree shaking issue https://github.com/missive/emoji-mart/issues/229#issuecomment-448080501
 import Picker from 'emoji-mart/dist/components/picker/nimble-picker';
 import Emoji from 'emoji-mart/dist/components/emoji/nimble-emoji';
-import { EditorState } from 'draft-js';
+import { EditorState } from '@bufferapp/draft-js';
 
 import attachImmutableEntitiesToEmojis from './modifiers/attachImmutableEntitiesToEmojis';
 import addEmoji from './modifiers/addEmoji';
@@ -52,6 +52,7 @@ export default function ({
           sheetSize={sheetSize}
           data={data}
           set={set}
+          skin={foundedEmoji.skin || 1}
         >
           {children || decoratedText }
         </Emoji>

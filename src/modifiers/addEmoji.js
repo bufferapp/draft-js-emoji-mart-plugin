@@ -1,7 +1,7 @@
 // @flow
 
 // Original: https://github.com/draft-js-plugins/draft-js-plugins/blob/master/draft-js-emoji-plugin/src/modifiers/addEmoji.js
-import { Modifier, EditorState } from 'draft-js';
+import { Modifier, EditorState } from '@bufferapp/draft-js';
 
 // This modifier can inserted emoji to current cursor position (with replace selected fragment),
 // or replaced emoji shortname like ":thumbsup:". Behavior determined by `Mode` parameter.

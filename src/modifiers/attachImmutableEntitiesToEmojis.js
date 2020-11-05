@@ -1,7 +1,7 @@
 // @flow
 
 // Original: https://github.com/draft-js-plugins/draft-js-plugins/blob/master/draft-js-emoji-plugin/src/modifiers/attachImmutableEntitiesToEmojis.js
-import { EditorState, Modifier, SelectionState } from 'draft-js';
+import { EditorState, Modifier, SelectionState } from '@bufferapp/draft-js';
 import findWithRegex from 'find-with-regex';
 
 import { unicodeEmojiRegexp } from '../constants';
